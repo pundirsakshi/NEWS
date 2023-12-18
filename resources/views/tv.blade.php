@@ -42,16 +42,14 @@
     </style>
 </head>
 <body>
-     
 @include('header')
     <h1 class="head">TODAY'S NEWS</h1>
-    <hr>
+  <hr>
 <div class="news">
 
     @foreach($data as $d)
 
         <div class="outer">
-        
 
             <h1 class="title">
                 {{$d['title']}}
@@ -64,8 +62,6 @@
             <p class="date">
                 {{$d ['pubDate']}}
             </p>
-           
-
 
         </div>
 
